@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "VT323", monospace; */
+    /* font-family: "Inter"; */
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+body {
+    background-color: #282828;
+}
+
+header {
+    background-color: #292929;
+    padding: 0px 15px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 2px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+header > h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ebebeb;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+aside {
+    width: 100%;
+    max-width: 270px;
+    background-color: #434242;
+    padding: 30px 20px 20px;
+    min-height: calc(100dvh - 55px);
+}
+
+.canvas {
+    width: 100%;
+    max-width: 720px;
+    margin-top: 20px;
+    /* aspect-ratio: 1/1; */
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.row {
+    display: flex;
+    gap: 2px;
+}
+
+.pixel {
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: #fff;
+    user-select: none;
+}
+
+.option-title {
+    color: #ebebeb;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: block;
+}
+
+.input-size {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #212121;
+    outline: none;
+    margin: 10px 0 20px;
+}
+
+.input-color {
+    appearance: none;
+    width: 42px;
+    height: 45px;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    margin: 5px 0 15px;
+}
+
+.input-color::-moz-color-swatch {
+    border-radius: 50px;
+    border: 2px solid #ebebeb;
+}
+
+.input-color::-webkit-color-swatch {
+    border-radius: 50px;
+    border: 2px solid #ebebeb;
+}
+
+.used-colors {
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.button-color {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-save {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-top: 30px;
+    background-color: #ebebeb;
+    cursor: pointer;
+}
+
+.button-save:hover {
+    background-color: #d5d4d4;
+    transition: 0.5s;
+}
+
+.resize {
+    height: 720px;
+    width: 2px;
+    background-color: #444;
+    margin-top: 20px;
+    cursor: col-resize;
+}
+
+/* AREA DE FERRAMENTAS*/
+
+.toolbar {
+    margin-top: 5px;
+}
+
+.button-eraser {
+    width: 40px;
+    height: 40px;
+    /* display: flex; */
+    overflow: hidden;
+    border: none;
+    outline: none;
+    background-color: #212121;
+    border-radius: 50%;
+    
+}
+
+.button-paint {
+    width: 40px;
+    height: 40px;
+    /* display: flex; */
+    overflow: hidden;
+    border: none;
+    outline: none;
+    background-color: #212121;
+    border-radius: 50%;
+    
+}
+
+.button-img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 35px;
+    height: 35px;
+}
+
+.button-active {
+    background-color: white; /* Cor para indicar que o botão está ativo */
+  }
